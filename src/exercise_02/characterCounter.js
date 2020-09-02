@@ -11,12 +11,10 @@ export default function countCharacter(string, prediction) {
   if (prediction === undefined) {
     return string.length;
   } else {
-    console.log("Debug: " + prediction());
     var appear = 0;
     for(var i =0;i < string.length;i++){
       if (prediction(string[i])){appear += 1;}
     }
     return (appear);
-    // return 2;
   }
 }
